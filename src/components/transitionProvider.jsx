@@ -26,7 +26,7 @@ const TransititonProvider = ({ children }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          {pathName === "/" ? "HOME" : pathName.substring(1).toUpperCase()}
+          {pathName === "/" ? "SUSHOBHAN NAYAK" : pathName.substring(1).toUpperCase()}
         </motion.div>
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-40"
