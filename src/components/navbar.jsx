@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Links = [
   { url: "/", title: "Home" },
