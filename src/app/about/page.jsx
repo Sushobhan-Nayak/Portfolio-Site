@@ -70,16 +70,16 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* title */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    BTech
+                    Bachelor of Technology
                   </div>
-                  <div className="p-3 text-sm italic">
+                  <div className="p-3 text-sm">
                     Electronics and Communication
                   </div>
                   <div className="p-3 text-sm text-red-400 font-semibold">
                     2021 - Present
                   </div>
                   <div className="p-2 text-sm font-semibold rounded-lg bg-white w-fit">
-                    NIT, Calicut
+                    National Institute of Technology, Calicut
                   </div>
                 </div>
                 {/* center */}
@@ -108,18 +108,46 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* title */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    12th
+                    Intermediate
                   </div>
-                  <div className="p-3 text-sm italic">
-                    Electronics and Communication
+                  <div className="p-3 text-sm">
+                    Central Board of Secondary Education
                   </div>
                   <div className="p-3 text-sm text-red-400 font-semibold">
-                    2021 - Present
+                    2019 - 2021
                   </div>
                   <div className="p-2 text-sm font-semibold rounded-lg bg-white w-fit">
-                    NIT, Calicut
+                    Blossom Public School, Pune
                   </div>
                 </div>
+              </div>
+              <div className="flex justify-between h-48">
+                {/* Left */}
+                <div className="w-1/3">
+                  {/* title */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    High School
+                  </div>
+                  <div className="p-3 text-sm">
+                    Central Board of Secondary Education
+                  </div>
+                  <div className="p-3 text-sm text-red-400 font-semibold">
+                    2016 - 2019
+                  </div>
+                  <div className="p-2 text-sm font-semibold rounded-lg bg-white w-fit">
+                    Podar International School, Pune
+                  </div>
+                </div>
+                {/* center */}
+                <div className="w-1/6 flex justify-center">
+                  {/* Line */}
+                  <div className="w-1 h-full bg-gray-500 rounded relative">
+                    {/* Line Circle */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-500 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* right */}
+                <div className="w-1/3"></div>
               </div>
             </div>
           </div>
