@@ -39,16 +39,12 @@ const AboutPage = () => {
     >
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* Text */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-3/5">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-36 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-3/5">
           {/* Biography */}
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p className="text-lg">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has be It has survived not only five
-              centuries, but also the leapy unchanged. It was popularised in the
-              passages, and more recently with desktop publishing software like
-              Aldus PageMaker including versions of Lorem Ipsum.
+              Hello , guys I am Sushobhan Nayak
             </p>
             <span className="italic">
               Lorem Ipsum is simply dummy text of the printing and typesetting
