@@ -70,7 +70,7 @@ const PortfolioPage = () => {
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-lg">
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-b-lg rounded-tr-lg">
                       See Demo
                     </button>
                   </Link>
@@ -81,8 +81,10 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-10 items-center justify-center text-center">
-        <h1 className="text-7xl font-semibold">Do you have a project ?</h1>
+      <div className="w-screen h-screen flex flex-col gap-4 items-center justify-center text-center">
+        <h1 className="text-7xl font-semibold mt-24">
+          Do you have a project ?
+        </h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}

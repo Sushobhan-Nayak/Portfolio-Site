@@ -1,6 +1,8 @@
 "use client";
 
+import { useMouse } from "@uidotdev/usehooks";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Homepage = () => {
   return (
@@ -12,28 +14,53 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* Image Container */}
-        {/* <motion.div animate={{ scale: 1.5 }} transition={{ duration: 3 }}> */}
-          <div className="h-1/2 relative flex justify-center lg:w-1/2 lg:h-full">
-            <img src="/hero.png" alt="" className="h-full object-contain"></img>
-          </div>
-        {/* </motion.div> */}
+
+        <motion.div
+          className="h-1/2 relative flex justify-left lg:w-1/2 lg:h-full"
+          whileHover={{
+            scaleY: 1.1,
+            scaleX: 1.1,
+            transition: {
+              duration: 0.5,
+              ease: "easeInOut",
+              type: "spring",
+            },
+          }}
+
+          // whileHover={{
+          //   scaleX: -1.1,
+          //   x: -8,
+          //   scaleY: 1.1,
+          //   transition: { duration: 1 },
+          // }}
+        >
+          <img
+            src="/sn1.png"
+            alt=""
+            className="h-full object-contain xl:w-11/12"
+          ></img>
+        </motion.div>
 
         {/* Text Conatainer */}
         <div className="h-1/2 flex flex-col gap-8 items-center justify-center lg:h-full lg:w-1/2">
           {/* Title */}
           <h1 className="font-bold text-4xl md:text-6xl w-full">
-            Crafting Digital Experiences, Designing Tomorrow
+            Techfolio: Sushobhan Nayak's Digital Portfolio
           </h1>
           {/* Descrp */}
           <p className="md:text-xl w-full">Welcome to my portfolio website</p>
           {/* Buttons */}
           <div className="flex gap-4 w-full">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
-              View My Work
-            </button>
-            <button className="p-4 rounded-lg ring-1 ring-black">
-              Contact Me
-            </button>
+            <Link href="/portfolio">
+              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+                View My Work
+              </button>
+            </Link>
+            <Link href="/contact">
+              <button className="p-4 rounded-lg ring-1 ring-black">
+                Contact Me
+              </button>
+            </Link>
           </div>
         </div>
       </div>

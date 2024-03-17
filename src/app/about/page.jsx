@@ -11,12 +11,12 @@ const skillList = [
   "CSS",
   "Flutter",
   "Dart",
-  "ReactJs",
-  "NextJs",
+  "ReactJS",
+  "NextJS",
   "Firebase",
-  "Verilog",
   "MongoDB",
   "SQL",
+  "POSTGRESQL",
   "AWS",
 ];
 const AboutPage = () => {
@@ -37,18 +37,28 @@ const AboutPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
+      <div
+        className="h-full overflow-scroll lg:flex overflow-x-hidden"
+        ref={containerRef}
+      >
         {/* Text */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-36 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-3/5">
           {/* Biography */}
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
-            <p className="text-lg">
-              Hello , guys I am Sushobhan Nayak
+            <p className="text-xl">
+              Hello , everyone I am Sushobhan Nayak, junior at NIT Calicut.
             </p>
-            <span className="italic">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+            <span className="text-lg">
+              As an ECE student at NIT Calicut, I excel in multiple programming
+              languages including Python, JavaScript, C++, C, and Dart.
+              Proficient in React, Next.js, and Flutter, I develop dynamic web
+              and mobile applications. Skilled in database management systems
+              like Firebase, PostgreSQL, MySQL, and MongoDB, I architect robust
+              data solutions. Additionally, I leverage Docker for streamlined
+              deployments. With expertise in full-stack development, I innovate
+              across various technologies, including machine learning and
+              computer vision.
             </span>
           </div>
 
