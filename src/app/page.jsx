@@ -12,7 +12,7 @@ const Homepage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-x-hidden">
         {/* Image Container */}
 
         <motion.div
@@ -26,13 +26,6 @@ const Homepage = () => {
               type: "spring",
             },
           }}
-
-          // whileHover={{
-          //   scaleX: -1.1,
-          //   x: -8,
-          //   scaleY: 1.1,
-          //   transition: { duration: 1 },
-          // }}
         >
           <img
             src="/sn1.png"

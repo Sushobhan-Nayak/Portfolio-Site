@@ -80,7 +80,7 @@ const AboutPage = () => {
             >
               {skillList.map((skl) => (
                 <div
-                  className="rounded p-2 text-sm cursor-pointer text-white bg-black hover:bg-white hover:text-black"
+                  className="rounded p-2 text-sm cursor-pointer text-white bg-red-600 hover:bg-white hover:text-black"
                   key={skl}
                 >
                   {skl}

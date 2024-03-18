@@ -105,7 +105,7 @@ const PortfolioPage = () => {
             </text>
           </motion.svg>
           <Link
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto text-white bg-black rounded-full flex items-center justify-center"
+            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto text-white bg-black rounded-full flex items-center justify-center z-50"
             href="/contact"
           >
             Hire Me

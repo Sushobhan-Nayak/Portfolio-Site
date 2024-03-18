@@ -10,7 +10,7 @@ const TransititonProvider = ({ children }) => {
   return (
     <AnimatePresence mode="wait">
       <div
-        className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100"
+        className="w-screen h-screen bg-gradient-to-b from-blue-200 to-red-100"
         key={pathName}
       >
         <motion.div
@@ -26,7 +26,9 @@ const TransititonProvider = ({ children }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          {pathName === "/" ? "SUSHOBHAN NAYAK" : pathName.substring(1).toUpperCase()}
+          {pathName === "/"
+            ? "SUSHOBHAN NAYAK"
+            : pathName.substring(1).toUpperCase()}
         </motion.div>
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-40"

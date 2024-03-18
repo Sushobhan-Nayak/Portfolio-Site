@@ -6,7 +6,7 @@ import NavLink from "./navLink";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Links = [
+const links = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About" },
   { url: "/portfolio", title: "Portfolio" },
@@ -47,10 +47,10 @@ const listItemVariants = {
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl overflow-x-hidden">
       {/* Links */}
       <div className="hidden md:flex gap-4 w-1/3">
-        {Links.map((link) => (
+        {links.map((link) => (
           <NavLink link={link} key={link.title}></NavLink>
         ))}
       </div>
@@ -116,11 +116,11 @@ const Navbar = () => {
             variants={listVariants}
             animate="opened"
             initial="closed"
-            className="absolute top-0 left-0 bg-black w-screen h-screen text-white flex flex-col items-center justify-center gap-8 text-xl z-40"
+            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-3xl z-50"
           >
-            {Links.map((link) => (
+            {links.map((link) => (
               <motion.div key={link.title} variants={listItemVariants}>
-                <Link href={link.url} key={link.title}>
+                <Link href={link.url} key={link.title} className="relative z-1">
                   {link.title}
                 </Link>
               </motion.div>
