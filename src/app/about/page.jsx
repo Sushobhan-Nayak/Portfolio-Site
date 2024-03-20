@@ -44,7 +44,7 @@ const AboutPage = () => {
         {/* Text */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-36 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-3/5">
           {/* Biography */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col gap-12 justify-center text-white">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p className="text-xl">
               Hello , everyone I am Sushobhan Nayak, junior at NIT Calicut.
@@ -73,14 +73,14 @@ const AboutPage = () => {
               SKILLS
             </motion.h1>
             <motion.div
-              className="flex gap-4 flex-wrap"
+              className="flex gap-4 flex-wrap z-50"
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
             >
               {skillList.map((skl) => (
                 <div
-                  className="rounded p-2 text-sm cursor-pointer text-white bg-red-600 hover:bg-white hover:text-black"
+                  className="rounded p-2 text-sm cursor-pointer text-black bg-white hover:bg-black hover:text-white font-semibold"
                   key={skl}
                 >
                   {skl}
@@ -115,7 +115,7 @@ const AboutPage = () => {
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg w-fit">
                     Bachelor of Technology
                   </div>
-                  <div className="p-3 text-sm">
+                  <div className="p-3 text-sm text-white">
                     Electronics and Communication
                   </div>
                   <div className="p-3 text-sm text-red-400 font-semibold">
@@ -153,7 +153,7 @@ const AboutPage = () => {
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg w-fit">
                     Intermediate
                   </div>
-                  <div className="p-3 text-sm">
+                  <div className="p-3 text-sm text-white">
                     Central Board of Secondary Education
                   </div>
                   <div className="p-3 text-sm text-red-400 font-semibold">
@@ -171,7 +171,7 @@ const AboutPage = () => {
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     High School
                   </div>
-                  <div className="p-3 text-sm">
+                  <div className="p-3 text-sm text-white">
                     Central Board of Secondary Education
                   </div>
                   <div className="p-3 text-sm text-red-400 font-semibold">

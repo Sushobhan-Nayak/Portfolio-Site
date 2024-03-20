@@ -1,5 +1,6 @@
 "use client";
 
+import TextAnimation from "@/components/textanimation";
 import { useMouse } from "@uidotdev/usehooks";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -16,16 +17,16 @@ const Homepage = () => {
         {/* Image Container */}
 
         <motion.div
-          className="h-1/2 relative flex justify-left lg:w-1/2 lg:h-full"
-          whileHover={{
-            scaleY: 1.1,
-            scaleX: 1.1,
-            transition: {
-              duration: 0.5,
-              ease: "easeInOut",
-              type: "spring",
-            },
-          }}
+          className="h-1/2 flex justify-left lg:w-1/2 lg:h-full"
+          // whileHover={{
+          //   scaleY: 1.1,
+          //   scaleX: 1.1,
+          //   transition: {
+          //     duration: 0.5,
+          //     ease: "easeInOut",
+          //     type: "spring",
+          //   },
+          // }}
         >
           <img
             src="/sn1.png"
@@ -35,22 +36,25 @@ const Homepage = () => {
         </motion.div>
 
         {/* Text Conatainer */}
-        <div className="h-1/2 flex flex-col gap-8 items-center justify-center lg:h-full lg:w-1/2">
+        <div className="h-1/2 flex flex-col gap-12 lg:gap-24 items-start justify-center lg:h-full lg:w-1/2 text-white">
           {/* Title */}
           <h1 className="font-bold text-4xl md:text-6xl w-full">
             Techfolio: Sushobhan Nayak's Digital Portfolio
           </h1>
           {/* Descrp */}
-          <p className="md:text-xl w-full">Welcome to my portfolio website</p>
+          <div className="flex justify-center w-2/5 lg:justify-start">
+            <TextAnimation></TextAnimation>
+          </div>
+
           {/* Buttons */}
-          <div className="flex gap-4 w-full">
+          <div className="flex gap-4 w-full justify-center lg:justify-start">
             <Link href="/portfolio">
-              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+              <button className="p-4 rounded-lg ring-1 ring-white bg-black text-white">
                 View My Work
               </button>
             </Link>
             <Link href="/contact">
-              <button className="p-4 rounded-lg ring-1 ring-black">
+              <button className="p-4 rounded-lg ring-1 ring-white">
                 Contact Me
               </button>
             </Link>
