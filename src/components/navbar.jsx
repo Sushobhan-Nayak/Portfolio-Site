@@ -9,7 +9,7 @@ import Image from "next/image";
 const links = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About" },
-  { url: "/portfolio", title: "Portfolio" },
+  { url: "/portfolio", title: "Projects" },
   { url: "/contact", title: "Contact" },
 ];
 
@@ -88,7 +88,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* Responsive menu */}
-      <div className="md:hidden">
+      <div className="md:hidden z-50">
         {/* Menu button */}
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"

@@ -38,11 +38,11 @@ const Homepage = () => {
         {/* Text Conatainer */}
         <div className="h-1/2 flex flex-col gap-12 lg:gap-24 items-start justify-center lg:h-full lg:w-1/2 text-white">
           {/* Title */}
-          <h1 className="font-bold text-4xl md:text-6xl w-full">
+          <h1 className="font-bold text-4xl lg:text-6xl w-full text-center lg:text-start">
             Techfolio: Sushobhan Nayak's Digital Portfolio
           </h1>
           {/* Descrp */}
-          <div className="flex justify-center w-2/5 lg:justify-start">
+          <div className="flex justify-center w-2/5 md:w-3/5 lg:justify-start">
             <TextAnimation></TextAnimation>
           </div>
 
