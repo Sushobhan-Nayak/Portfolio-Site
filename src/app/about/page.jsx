@@ -1,7 +1,7 @@
 "use client";
 
 import Brain from "@/components/brain";
-import { motion, useInView, useScroll } from "framer-motion";
+import { easeIn, motion, useInView, useScroll } from "framer-motion";
 import { useRef } from "react";
 const skillList = [
   "JavaScript",
@@ -25,10 +25,12 @@ const AboutPage = () => {
   const skillRef = useRef();
   const isSkillRefInView = useInView(skillRef, {
     margin: "-100px",
+    once: true,
   });
   const eduRef = useRef();
   const isEduRefInView = useInView(eduRef, {
     margin: "-100px",
+    once: true,
   });
   return (
     <motion.div
@@ -63,12 +65,15 @@ const AboutPage = () => {
           </div>
 
           {/* Skills */}
-          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
+          <div
+            className="flex flex-col gap-12 justify-center text-white"
+            ref={skillRef}
+          >
             <motion.h1
               className="font-bold text-2xl"
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.3, duration: 0.2 }}
             >
               SKILLS
             </motion.h1>
@@ -76,7 +81,7 @@ const AboutPage = () => {
               className="flex gap-4 flex-wrap z-50"
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.3, duration: 0.2 }}
             >
               {skillList.map((skl) => (
                 <div
@@ -94,10 +99,10 @@ const AboutPage = () => {
             ref={eduRef}
           >
             <motion.h1
-              className="font-bold text-2xl"
+              className="font-bold text-2xl text-white"
               initial={{ x: "-300px" }}
               animate={isEduRefInView ? { x: 0 } : {}}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.3, duration: 0.2 }}
             >
               EDUCATION
             </motion.h1>
@@ -105,7 +110,7 @@ const AboutPage = () => {
             <motion.div
               initial={{ x: "-300px" }}
               animate={isEduRefInView ? { x: 0 } : {}}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.3, duration: 0.2 }}
             >
               {/* List Item */}
               <div className="flex justify-between h-48">
