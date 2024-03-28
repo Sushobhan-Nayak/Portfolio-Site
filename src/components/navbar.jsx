@@ -77,7 +77,7 @@ const Navbar = () => {
         >
           <img src="/linkedin.png" alt="" width={24} height={24}></img>
         </Link>
-        <Link href="https://github.com/Sushobhan-Nayak" target="_blank">
+        <Link href="https://www.instagram.com/tech_bro_17/" target="_blank">
           <img src="/instagram.png" alt="" width={24} height={24}></img>
         </Link>
         <Link href="https://leetcode.com/tech_bro_17/" target="_blank">
