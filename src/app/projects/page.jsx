@@ -7,6 +7,14 @@ import { useRef } from "react";
 const projects = [
   {
     id: 1,
+    color: "from-orange-200 to-pink-400",
+    title: "Lets Connect",
+    desc: "A social media app to connect with your friends with many interactive and unique features.",
+    img: "/lc.png",
+    link: "https://letsconnect-social.vercel.app/",
+  },
+  {
+    id: 2,
     color: "from-violet-300 to-orange-200",
     title: "NER Profile",
     desc: "An app to detect imperosnations on Twitter and Instagram.",
@@ -14,7 +22,7 @@ const projects = [
     link: "https://github.com/Impersonation-Profile-Detector/App",
   },
   {
-    id: 2,
+    id: 3,
     color: "from-pink-200 to-blue-300",
     title: "Saathi App",
     desc: "An app for travellers to store important travel info and share it with others using groups.",
@@ -22,7 +30,7 @@ const projects = [
     link: "https://github.com/Sushobhan-Nayak/Saathi",
   },
   {
-    id: 3,
+    id: 4,
     color: "from-red-200 to-blue-300",
     title: "Dukaan",
     desc: "A frontend project using react and tailwind.",
@@ -30,7 +38,7 @@ const projects = [
     link: "https://dukaan-tailwind.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     color: "from-green-200 to-orange-300",
     title: "Find My Loved Ones",
     desc: "An app to unite lost person with their loved ones using flutter and firebase",
@@ -41,7 +49,7 @@ const projects = [
 const PortfolioPage = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({ target: useRef });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-85%"]);
   return (
     <motion.div
       className="h-full"
@@ -77,7 +85,11 @@ const PortfolioPage = () => {
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-xl xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} className="flex justify-end">
+                  <Link
+                    href={item.link}
+                    className="flex justify-end"
+                    target="_blank"
+                  >
                     <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-black text-white font-semibold m-4 rounded-b-lg rounded-tr-lg">
                       See Demo
                     </button>
@@ -89,7 +101,7 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-4 items-center justify-center text-center bg-black text-white mt-0">
+      <div className="w-screen h-screen flex flex-col gap-4 items-center justify-center text-center bg-black text-white">
         <h1 className="text-7xl font-semibold">Do you have a project ?</h1>
         <div className="relative">
           <motion.svg

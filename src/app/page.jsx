@@ -46,7 +46,7 @@ const Homepage = () => {
                 Contact Me
               </button>
             </Link> */}
-            <Link href="/resume">
+            <Link href="/resume.pdf" target="_blank">
               <button className="p-4 rounded-lg ring-1 ring-white bg-black text-white">
                 Resume
               </button>
