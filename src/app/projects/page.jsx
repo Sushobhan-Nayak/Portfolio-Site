@@ -7,6 +7,14 @@ import { useRef } from "react";
 const projects = [
   {
     id: 1,
+    color: "from-green-200 to-blue-400",
+    title: "Kidney Stone Detection",
+    desc: " Kidney Stone Detection using CNN, integrated into a web application using Flask for the backend and NextJS for the frontend.",
+    img: "/ksd.png",
+    link: "https://github.com/Sushobhan-Nayak/Kidney-Stone-Detection",
+  },
+  {
+    id: 2,
     color: "from-orange-200 to-pink-400",
     title: "Lets Connect",
     desc: "A social media app to connect with your friends with many interactive and unique features.",
@@ -14,7 +22,7 @@ const projects = [
     link: "https://letsconnect-social.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     color: "from-violet-300 to-orange-200",
     title: "NER Profile",
     desc: "An app to detect imperosnations on Twitter and Instagram.",
@@ -22,23 +30,7 @@ const projects = [
     link: "https://github.com/Impersonation-Profile-Detector/App",
   },
   {
-    id: 3,
-    color: "from-pink-200 to-blue-300",
-    title: "Saathi App",
-    desc: "An app for travellers to store important travel info and share it with others using groups.",
-    img: "/Saathi.png",
-    link: "https://github.com/Sushobhan-Nayak/Saathi",
-  },
-  {
     id: 4,
-    color: "from-red-200 to-blue-300",
-    title: "Dukaan",
-    desc: "A frontend project using react and tailwind.",
-    img: "/dukaan.png",
-    link: "https://dukaan-tailwind.vercel.app/",
-  },
-  {
-    id: 5,
     color: "from-green-200 to-orange-300",
     title: "Find My Loved Ones",
     desc: "An app to unite lost person with their loved ones using flutter and firebase",

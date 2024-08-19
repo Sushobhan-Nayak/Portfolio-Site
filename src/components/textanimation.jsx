@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const texts = [
+  "I'm a Data Science Enthusiast",
   "I'm an App Developer",
   "I'm a Web Developer",
-  "I'm a ML Enthusiast",
 ];
 const typingSpeed = 50; // Adjust the typing speed (milliseconds per character)
 
